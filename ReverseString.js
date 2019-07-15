@@ -1,5 +1,13 @@
 function revString(str) { 
     let revString = '';
+    for (let char of str) { 
+        revString = char + revString 
+    }
+	return revString;
+}
+
+function revString(str) { 
+    let revString = '';
     return str.split('').reduce((revString,char) => char + revString ,'');
 
 }

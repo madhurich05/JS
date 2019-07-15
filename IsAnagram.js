@@ -9,8 +9,10 @@ function formatStr(str) {
     .sort()
     .join('');
 }
-undefined
+
 isAnagram("cinema","iceman")
 true
 isAnagram("cinema","icemane")
 false
+isAnagram("dormitory","dirty #room")
+true

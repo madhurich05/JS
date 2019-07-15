@@ -1,0 +1,16 @@
+// Change every letter of string to the next letter
+// if vowel, it should be capitalized
+// if it is z /Z, it should be replaced by a
+function letterChange(str) {
+
+    let newStr = str.replace(/[a-z]/gi, function (char) {
+        if (char === 'z' || char === 'Z') {
+            return 'a';
+        } else {
+            return String.fromCharCode(char.charCodeAt() + 1);
+        }
+    });
+    return newStr;
+}
+
+letterChange("Hello There") // "Ifmmp Uifsf"
